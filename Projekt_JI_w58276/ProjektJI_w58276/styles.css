@@ -1,0 +1,358 @@
+* {
+    color: #FFFFFFFF;
+}
+
+body {
+    background: url(backg.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow-y: scroll;
+}
+
+#frame {
+    border: solid #000000 1px;
+    width: 75%;
+    margin: 2% 12.5%;
+    padding: 2.5%;
+    background-color: #ffffffc9;
+    border-radius: 10px;
+}
+
+header {
+    border: solid black 1px;
+    background-color: #5e5d5d;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#headerImg {
+    width: 30%;
+}
+
+#headerTxt {
+    width: 60%;
+    margin-left: 5%;
+}
+
+#navUl {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.navLiA {
+    display: block;
+    float: left;
+    width:130px;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 16pt;
+    background-color: #424242;
+    border: solid grey 1px;
+    color: #FFFFFFFF;
+    border-radius: 10px;
+    margin: 0px 2px 30px;
+}
+
+#meUL {
+    width:130px;
+    padding: 0px;
+    list-style: none;
+}
+
+#meUL li a {
+    display: block;
+    text-align: center;
+    font-size: 16pt;
+    background-color: #5d58a8;
+    border: solid grey 1px;
+    border-radius: 10px;
+    margin: 0px 0px 60px;
+    text-decoration: none;
+    border: double black 6px;
+    font-weight: bold;
+}
+
+
+.navLiA:hover {
+    background-color: #706767;
+}
+
+main {
+    text-align: center;
+    clear: both;
+    border-radius: 10px;
+    border: solid #5e5d5d 1px;
+    padding: 2%;
+    margin: 2%;
+    background-color: #424242;
+}
+
+.mainSection {
+    text-align: center;
+}
+
+.mainSection h3 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5e5d5d;
+    padding: 7px;
+    border: solid black 1px;
+    font-size: 24pt;
+    text-decoration: underline;
+    border-radius: 30px;
+}
+
+.infoFoto {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoFoto img {
+    width: 100px;
+    margin-bottom: -60px;
+}
+
+
+.infoOpis {
+    margin: 5px;
+    height: 90px;
+    background-color: #5e5d5d;
+    border: solid #383838 1px;
+    padding: 5px;
+}
+
+.infoOpis a {
+    text-decoration: none;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.infoOpis a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    border-radius: 10px;
+    border: solid black 1px;
+    background-color: #424242;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFFFF;
+}
+
+footer hr {
+    width: 50%;
+}
+
+#oamgFoto {
+    width: 100%;
+}
+
+#histM {
+    text-align: center;
+}
+
+#formRejestr label {
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.inpRej {
+    color: black;
+    height: 40px;
+    padding: 5px;
+    font-size: 14pt;
+}
+
+#inpRejSub {
+    color: #000000 !important;
+    height: 75px;
+    width: 175px;
+    border-radius: 10px;
+    font-size: 16pt;
+}
+
+#szukajSz {
+    width: 50%;
+}
+
+#wierszAutor {
+    border: solid black 1px;
+    background-color: #5e5d5d;
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#wierszTytul {
+    border: solid black 1px;
+    background-color: #5e5d5d;
+    font-weight: bold;
+    font-size: 16pt;
+    height: 100px;
+    margin-left: 115px;
+    margin-right: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#wierszTytul p {
+    margin-bottom: -30px;
+}
+
+#wierszPostHr {
+    margin-bottom: 25px;
+}
+
+#strony a {
+    margin: 2px;
+    font-size: 16pt;
+    cursor: pointer;
+}
+
+#strony span {
+    cursor: context-menu;
+}
+
+#addGallery {
+    width: 100px;
+    position: relative;
+    top: 20px;
+}
+
+#addGallery:hover {
+    cursor: pointer;
+}
+
+#divGallery {
+    text-align: left;
+}
+
+#divGallery span {
+    display: inline-block;
+    font-size: 14pt;
+    vertical-align: bottom;
+}
+
+#showGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo {
+    margin: 5px;
+}
+
+#mainDodatki input {
+    color: black !important;
+    font-size: 16pt;
+    margin:5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#mainDodatki label {
+    font-size: 16pt;
+    margin:5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#mainDodatki input:hover {
+    border: solid red 2px;
+}
+
+#inpME {
+    width: 80%;
+}
+
+#inpMESub {
+    color: black;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+#opisME_id {
+    width: 80%;
+    height: 250px;
+    color: black;
+    padding: 7px;
+    resize: none;
+    margin-left: 6px;
+}
+
+#MElabel {
+    vertical-align: top;
+}
+
+#wierszAutorS {
+    border: solid black 1px;
+    background-color: #5e5d5d;
+    width: 100px;
+    height: 75px;
+    float: left;
+    border-top-left-radius: 10px;
+}
+
+#wierszTytulS {
+    border: solid black 1px;
+    background-color: #5e5d5d;
+    font-weight: bold;
+    font-size: 16pt;
+    height: 75px;
+    margin-left: 115px;
+    margin-right: 0px;
+    border-top-right-radius: 10px;
+}
+
+#wierszOpisS {
+    background-color: #5e5d5d;
+    font-size: 14pt;
+    border: solid black 1px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 10px;
+    word-wrap: break-word;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#wierszOpisS2 {
+    background-color: #5e5d5d;
+    font-size: 14pt;
+    border: solid black 1px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 10px;
+    word-wrap: break-word;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#opisKom {
+    width: 80%;
+    height: 250px;
+    background-color: #5e5d5d;
+    padding: 7px;
+    resize: none;
+    margin-left: 6px;
+}
+
+#opisKom::placeholder {
+    color:white;
+}
