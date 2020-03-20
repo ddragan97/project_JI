@@ -24,6 +24,7 @@
 
             $ile = mysqli_query($conn, "SELECT count($login) FROM users");
 
+            // zabezpieczenie jeśli taka nazwa użytkownika istnieje już w bazie
             if($ile > 0)
             {
                 echo "Taki Nick już istnieje, wybierz inny";
@@ -32,6 +33,7 @@
             else
 
             {
+                // funkcja szyfrująca hasło
                 $pass_hashed = password_hash($pass,PASSWORD_DEFAULT);
                 mysqli_query($conn, "INSERT INTO users (nick,pass) VALUES ('$login','$pass_hashed')");
 

@@ -18,7 +18,8 @@
 
         while($col = $hashed_pass->fetch_assoc())
         {
-            
+            // password_verify() funkcja sprawdzająca poprawność wpisanego hasła z kluczem znajdującym się w bazie
+            // jeśli wszystki się zgadza to zostaje utworzona zmienna sesyjna 'czy', której wartość to nazwa użytkownika - login
             if(password_verify($pass, $col['pass']))
             {
                 session_start();

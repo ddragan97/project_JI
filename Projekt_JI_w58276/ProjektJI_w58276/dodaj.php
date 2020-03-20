@@ -13,10 +13,14 @@
         <link rel="shortcut icon" href="favicon.png"/>
         <script>
 
+            // kasuj czyści zawartość pola przy kliknięciu na to pole
+
             let kasuj = function(elem)
             {
                 elem.value = "";
             }
+
+            // oblicz liczy kwote ubezpieczenia w zależności od danych wpisanych do formularza i przy pomocy DOM zmienia zawartość znacznika span
                 
             var oblicz = function()
                 {

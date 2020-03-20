@@ -85,6 +85,9 @@
                 </div>
 
                 <script>
+
+                    // po kliknięciu przycisku '+' dynamicznie tworzymy formularz
+
                     var plus = document.getElementById("addGallery");
 
                     var divG = document.getElementById('formGallery')
@@ -143,6 +146,7 @@
 
                         $nazwy = mysqli_query($conn, "SELECT Nazwa FROM foto");
 
+                        // używamy skryptu 'lightbox' do dynamicznego powiększania obrazów
                         while($nazwa = mysqli_fetch_array($nazwy))
                         {
                             echo "
