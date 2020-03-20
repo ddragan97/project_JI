@@ -113,6 +113,8 @@
                     
                     <?php
 
+                        // łączymy się z bazą danych 'projji' i wypisujemy jej zawartość stosując przy tym stronicowanie po 5 rekordów z bazy na jedną stronę
+
                         $conn = mysqli_connect('localhost','root','') or die("Problem z połączeniem");
                         $conn->query("SET NAMES 'utf8'");
                         mysqli_select_db($conn,'projji') or die("Problem z bazą");
@@ -159,6 +161,8 @@
                     <div id="strony">
                         
                         <?php
+
+                            // kod do wyświetlania numerów stron
 
                             for($i = 0; $i < $strony; $i++)
                             {

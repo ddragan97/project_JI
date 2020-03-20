@@ -88,6 +88,7 @@
                     ?>
 
                             <script>
+                                // jeśli użytkownik jest zalogowany to ma możliwość dodania postu - wyświetla się przycisk
 
                                 var amul = document.getElementById("meUL");
                                 amul.style.visibility="visible";

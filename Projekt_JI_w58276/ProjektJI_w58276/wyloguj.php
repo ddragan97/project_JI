@@ -1,4 +1,5 @@
 <?php
+    // po kliknięciu wyloguj sesja jest niszczona
     session_start();
     session_unset();
     session_destroy();

@@ -2,6 +2,8 @@
 
     session_start();
 
+    // pozyskane wartości z metody POST z formularza oraz wartość zmiennej sesyjnej 'czy'
+
     $tytul = $_POST['tytul'];
     $opis = $_POST['opis'];
     $kto = $_SESSION['czy'];

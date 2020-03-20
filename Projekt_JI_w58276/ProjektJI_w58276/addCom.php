@@ -2,6 +2,8 @@
 
     session_start();
 
+    // utworzenie zmiennych, których wartości pozyskane są z metod GET i POST
+
     $sciezka = $_POST['src'];
     $opis = $_POST['koment'];
     $gdzie = $_POST['bazza'];

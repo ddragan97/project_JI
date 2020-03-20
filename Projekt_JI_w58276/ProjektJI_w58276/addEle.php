@@ -25,6 +25,7 @@
                     <li><a id="iolog" class="navLiA" href="login.php"></a></li>
                     <li><a id="iorej" class="navLiA" href="rejestracja.php">Rejestracja</a></li>
                     <?php
+                        // jeśli istnieje sesja to pokaż kolejne pole w menu
                         if(isset($_SESSION["czy"]))
                         {
                             echo '
@@ -35,6 +36,7 @@
                 </ul>
                 
                 <?php
+                    // w zależności czy istnieje sesja czy też nie zmieniany jest styl przycisku zaloguj / wyloguj poprzez JS
                     if(isset($_SESSION["czy"]))
                         {
                 ?>
