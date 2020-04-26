@@ -85,11 +85,9 @@
                     <input type="submit" value="Wyślij" id="inpMESub"/>
                 </form>
             </main>
-            <footer>
-                <p>Designed by DD</p>
-                <hr>
-                <p>@Projekt WSIiZ</p>
-            </footer>
+            <?php
+                include_once("footer.php");
+            ?>
         </div>
     </body>
 </html>

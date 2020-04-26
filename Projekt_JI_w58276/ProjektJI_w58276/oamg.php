@@ -14,10 +14,9 @@
     </head>
     <body>
         <div id="frame">
-            <header>
-                <img id="headerImg" src="headerIco.png"/>
-                <img id="headerTxt" src="text.png"/>
-            </header>
+            <?php
+                require_once("header.php");
+            ?>
             <nav>
                 <ul id="navUl">
                     <li><a class="navLiA" href="index.php">Strona główna</a></li>
@@ -81,11 +80,9 @@
                     <img id="oamgFoto" src="oamgFoto.jpg"/>
                 </article>
             </main>
-            <footer>
-                <p>Designed by DD</p>
-                <hr>
-                <p>@Projekt WSIiZ</p>
-            </footer>
+            <?php
+                include_once("footer.php");
+            ?>
         </div>
     </body>
 </html>

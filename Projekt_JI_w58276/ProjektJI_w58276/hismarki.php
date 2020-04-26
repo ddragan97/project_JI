@@ -99,11 +99,9 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Pf7fU_o0ugY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </article>
             </main>
-            <footer>
-                <p>Designed by DD</p>
-                <hr>
-                <p>@Projekt WSIiZ</p>
-            </footer>
+            <?php
+                include_once("footer.php");
+            ?>
         </div>
     </body>
 </html>
