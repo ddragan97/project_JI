@@ -71,10 +71,9 @@
     </head>
     <body>
         <div id="frame">
-            <header>
-                <img id="headerImg" src="headerIco.png"/>
-                <img id="headerTxt" src="text.png"/>
-            </header>
+            <?php
+                require_once("header.php");
+            ?>
             <nav>
                 <ul id="navUl">
                     <li><a class="navLiA" href="index.php">Strona główna</a></li>
