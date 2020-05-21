@@ -2,6 +2,8 @@
 
     session_start();
 
+    include_once("szablon.php");
+
     $tytul = $_POST['tytul'];
     $opis = $_POST['opis'];
     $kto = $_SESSION['czy'];
@@ -9,7 +11,7 @@
     if($tytul=="" || $opis=="")
     {
         echo "Uzupełnij oba pola Tytuł i Opis";
-        header("Refresh:5; URL=addMech.php");
+        header("Refresh:3; URL=addMech.php");
     }
 
     else
@@ -23,8 +25,10 @@
         mysqli_close($conn);
 
         echo "Pomyślnie dodano";
-        header("Refresh:5; URL=mechaniczne.php");
+        header("Refresh:3; URL=mechaniczne.php");
             
     }
+
+    include_once("szablon2.php");
 
 ?>

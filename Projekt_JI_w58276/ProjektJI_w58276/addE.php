@@ -2,6 +2,8 @@
 
     session_start();
 
+    include_once("szablon.php");
+
     // pozyskane wartości z metody POST z formularza oraz wartość zmiennej sesyjnej 'czy'
 
     $tytul = $_POST['tytul'];
@@ -11,7 +13,7 @@
     if($tytul=="" || $opis=="")
     {
         echo "Uzupełnij oba pola Tytuł i Opis";
-        header("Refresh:5; URL=addEle.php");
+        header("Refresh:3; URL=addEle.php");
     }
 
     else
@@ -25,8 +27,10 @@
         mysqli_close($conn);
 
         echo "Pomyślnie dodano";
-        header("Refresh:5; URL=elektryczne.php");
+        header("Refresh:3; URL=elektryczne.php");
             
     }
+
+    include_once("szablon2.php");
 
 ?>

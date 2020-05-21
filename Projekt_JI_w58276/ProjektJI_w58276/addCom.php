@@ -2,6 +2,8 @@
 
     session_start();
 
+    include_once("szablon.php");
+
     // utworzenie zmiennych, których wartości pozyskane są z metod GET i POST
 
     $sciezka = $_POST['src'];
@@ -16,7 +18,7 @@
     if($opis=="")
     {
         echo "Napisz coś przed dodaniem";
-        header("Refresh:5; URL=szczegoly.php?id=$back&autt=$kto&titl=$co&baza=$gdzie");
+        header("Refresh:3; URL=szczegoly.php?id=$back&autt=$kto&titl=$co&baza=$gdzie");
     }
 
     else
@@ -30,8 +32,10 @@
         mysqli_close($conn);
 
         echo "Pomyślnie dodano";
-        header("Refresh:5; URL=szczegoly.php?id=$back&autt=$kto&titl=$co&baza=$gdzie");
+        header("Refresh:3; URL=szczegoly.php?id=$back&autt=$kto&titl=$co&baza=$gdzie");
             
     }
+
+    include_once("szablon2.php");
 
 ?>

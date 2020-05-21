@@ -1,12 +1,14 @@
 <?php
 
+    include_once("szablon.php");
+
     $login = $_POST['nick'];
     $pass = $_POST['password'];
 
     if($login=="" || $pass=="" || !isset($login) || !isset($pass))
     {
         echo "Uzupełnij oba pola Nick i Hasło";
-        header("Refresh:5; URL=login.php");
+        header("Refresh:3; URL=login.php");
     }
 
     else
@@ -25,18 +27,20 @@
                 session_start();
                 $_SESSION['czy'] = $login;
                 echo "Witaj $login";
-                header("Refresh:5; URL=index.php");
+                header("Refresh:3; URL=index.php");
             }
 
             else
             {
                 echo "Błędny login lub hasło";
-                header("Refresh:5; URL=login.php");
+                header("Refresh:3; URL=login.php");
             }
 
         }
 
         mysqli_close($conn);
     }
+
+    include_once("szablon2.php");
 
 ?>

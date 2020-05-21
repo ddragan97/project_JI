@@ -27,7 +27,7 @@
                         if($fraza == "")
                         {
                             echo "Nic nie wpisano";
-                            header("Refresh:5; URL=szukaj.php");
+                            header("Refresh:3; URL=szukaj.php");
                         }
 
                         else
